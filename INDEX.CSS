@@ -1,0 +1,233 @@
+  *{
+    margin: 0;
+    padding: 0;
+}
+h1,a{
+    text-align: center;
+    color: rgb(230, 48, 16);
+    font-size: 70px;
+    font-style: italic;
+    text-decoration: none;
+    letter-spacing: 7px;
+}
+
+/*
+ul{
+    background: #610202;
+    list-style-type: none;
+    overflow: hidden;
+    text-decoration: none;
+}*/
+
+
+li{
+    float: left;
+}
+
+li a, .stefany1{
+    display: inline-block;
+    color: #7c0707;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+    background: rgb(192, 125, 25);
+    color: #750606;
+    transition: 0.21s;
+}
+
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 150px;
+    
+}
+
+.dropdown-content a{
+    color: #000000;
+    display: block;
+    text-align: left;
+    border:1px solid #ccc;
+    text-decoration: none;
+}
+
+.stefany:hover .dropdown-content{
+    display: block;
+    transition: 0.3s; 
+}
+table,td,tr{
+    border:3px groove rgb(0, 0, 0);
+    background-color: #000000;
+    text-align: center;
+    width: 30% !important;margin: auto;
+}
+
+td.border1{
+    border-style: dashed;
+    border-width: 3px;
+    border-color: red;
+    width: 250;
+    border-radius: 1px;
+    background-color: yellow;
+    border-color: red;
+    font-family:cursive;
+}
+img{
+    width: 180px;
+    height: 250px;
+}
+body{ background-color: rgb(0, 0, 0);
+}
+.imagem{
+
+    float: left;
+    width: 50px;
+  }
+  
+  img{
+    width: 100%;
+  }
+  marquee{
+    
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(133, 0, 0);
+    behavior: unset;
+  }
+  div{
+   margin-left: 10px;
+  }
+  h3{color: rgb(221, 217, 212);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: 7px;
+   
+  }
+  p{font-size: 20px;
+    
+    color: rgb(151, 151, 151)
+   
+  }
+  #oi{
+    width: 100px;
+    height: 150px;
+  }
+  #verde{
+    position: relative;
+    height: auto;
+    margin-top: 12px;
+    margin-left: 60;
+    margin-right: 50;
+    background-color: rgba(104, 3, 3, 0.897);
+    background-size: cover;
+    border-radius: 20;
+    padding-left: 30;
+    padding-right: 20;
+    padding-bottom: 20;
+    padding-top: 10;
+  }
+  #peixe {
+  
+      background-position: center;
+      background-image: url("https://www.printi.com.br/blog/wp-content/uploads/2022/05/stranger-things-3-1-1-1080x475.jpg");
+      height: 400px;
+      width: 98%;
+   }
+   header{
+    background-color: #610202;
+}
+li{
+    list-style: none;
+}
+a.logo, .nav-link{
+    color: #ffff;
+    text-decoration: none;
+    letter-spacing: 10px;  
+    font-weight: bold;
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+.logo{
+    margin-left: 50px;
+    font-size: 4rem; 
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.nav-link{
+    transition: 0.5s;
+}
+.menu{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #ffff;
+    transition: all 0.3s ease-in-out;
+}
+@media (max-width: 768px){
+    .menu{
+        display: block;
+    }
+    .menu.active .bar:nth-child(2){
+        transform: translateY(0px) rotate(-45deg)
+    }
+    .menu.active .bar:nth-child(1){
+        transform: translateY(9px) rotate(45deg);
+    }
+    .menu.active .bar:nth-child(3){
+        opacity: 0;
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        background-color: #610202;
+        opacity: 0.85;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}
+aside{
+  
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(172, 37, 37);
+}
+
+.btn-styled {
+    font-size: 14px;
+    margin: 8px;
+    padding: 0 10px;
+    line-height: 2;
+    
+}
